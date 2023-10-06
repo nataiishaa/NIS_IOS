@@ -12,11 +12,11 @@ Objective: Learn how to never use Storyboard ever again. Gain experience with UI
 
 * What issues prevent us from using storyboards in real projects?
 
--Storyboards tend to become more complex as the project grows, especially in large-scale applications with multiple screens and view controllers
+Storyboards tend to become more complex as the project grows, especially in large-scale applications with multiple screens and view controllers
 
-- Storyboards can introduce difficulties in writing and maintaining UI tests and unit tests.
+ Storyboards can introduce difficulties in writing and maintaining UI tests and unit tests.
 
-- Storyboards can make it challenging to reuse UI components 
+ Storyboards can make it challenging to reuse UI components 
 
 
 * What is a safe area layout guide?
