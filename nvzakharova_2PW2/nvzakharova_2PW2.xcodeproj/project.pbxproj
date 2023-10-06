@@ -12,9 +12,6 @@
 		A20582BD2ACFFAC200EF9D1C /* nvzakharova_2PW2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A20582BB2ACFFAC200EF9D1C /* nvzakharova_2PW2.xcdatamodeld */; };
 		A20582BF2ACFFAC300EF9D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20582BE2ACFFAC300EF9D1C /* Assets.xcassets */; };
 		A20582C22ACFFAC300EF9D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20582C02ACFFAC300EF9D1C /* LaunchScreen.storyboard */; };
-		A20582CD2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20582CC2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests.swift */; };
-		A20582D72ACFFAC300EF9D1C /* nvzakharova_2PW2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20582D62ACFFAC300EF9D1C /* nvzakharova_2PW2UITests.swift */; };
-		A20582D92ACFFAC300EF9D1C /* nvzakharova_2PW2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20582D82ACFFAC300EF9D1C /* nvzakharova_2PW2UITestsLaunchTests.swift */; };
 		A20582E62ACFFD6F00EF9D1C /* WishMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20582E52ACFFD6F00EF9D1C /* WishMakerViewController.swift */; };
 		A20582E82AD0036F00EF9D1C /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20582E72AD0036F00EF9D1C /* CustomSlider.swift */; };
 		A20582EA2AD034DD00EF9D1C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20582E92AD034DD00EF9D1C /* CustomButton.swift */; };
@@ -47,10 +44,7 @@
 		A20582C12ACFFAC300EF9D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20582C32ACFFAC300EF9D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20582C82ACFFAC300EF9D1C /* nvzakharova_2PW2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nvzakharova_2PW2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A20582CC2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nvzakharova_2PW2Tests.swift; sourceTree = "<group>"; };
 		A20582D22ACFFAC300EF9D1C /* nvzakharova_2PW2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nvzakharova_2PW2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A20582D62ACFFAC300EF9D1C /* nvzakharova_2PW2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nvzakharova_2PW2UITests.swift; sourceTree = "<group>"; };
-		A20582D82ACFFAC300EF9D1C /* nvzakharova_2PW2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nvzakharova_2PW2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A20582E52ACFFD6F00EF9D1C /* WishMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewController.swift; sourceTree = "<group>"; };
 		A20582E72AD0036F00EF9D1C /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		A20582E92AD034DD00EF9D1C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -86,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				A20582B12ACFFAC200EF9D1C /* nvzakharova_2PW2 */,
-				A20582CB2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests */,
-				A20582D52ACFFAC300EF9D1C /* nvzakharova_2PW2UITests */,
 				A20582B02ACFFAC200EF9D1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,9 +99,9 @@
 			children = (
 				A20582B22ACFFAC200EF9D1C /* AppDelegate.swift */,
 				A20582B42ACFFAC200EF9D1C /* SceneDelegate.swift */,
-				A20582E52ACFFD6F00EF9D1C /* WishMakerViewController.swift */,
 				A20582E72AD0036F00EF9D1C /* CustomSlider.swift */,
 				A20582E92AD034DD00EF9D1C /* CustomButton.swift */,
+				A20582E52ACFFD6F00EF9D1C /* WishMakerViewController.swift */,
 				A20582EB2AD0520E00EF9D1C /* UIVIEW_pin.swift */,
 				A20582BE2ACFFAC300EF9D1C /* Assets.xcassets */,
 				A20582C02ACFFAC300EF9D1C /* LaunchScreen.storyboard */,
@@ -117,23 +109,6 @@
 				A20582BB2ACFFAC200EF9D1C /* nvzakharova_2PW2.xcdatamodeld */,
 			);
 			path = nvzakharova_2PW2;
-			sourceTree = "<group>";
-		};
-		A20582CB2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A20582CC2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests.swift */,
-			);
-			path = nvzakharova_2PW2Tests;
-			sourceTree = "<group>";
-		};
-		A20582D52ACFFAC300EF9D1C /* nvzakharova_2PW2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				A20582D62ACFFAC300EF9D1C /* nvzakharova_2PW2UITests.swift */,
-				A20582D82ACFFAC300EF9D1C /* nvzakharova_2PW2UITestsLaunchTests.swift */,
-			);
-			path = nvzakharova_2PW2UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20582CD2ACFFAC300EF9D1C /* nvzakharova_2PW2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20582D72ACFFAC300EF9D1C /* nvzakharova_2PW2UITests.swift in Sources */,
-				A20582D92ACFFAC300EF9D1C /* nvzakharova_2PW2UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

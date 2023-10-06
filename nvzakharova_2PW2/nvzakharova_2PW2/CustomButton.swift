@@ -28,7 +28,7 @@ final class CustomButton : UIButton {
         
         self.setTitle(title, for: .normal)
         self.setTitleColor(.black, for: .normal)
-        self.addTarget(self, action: #selector(pressedSimple), for: .touchUpInside)
+        
     }
     
     @available(*,unavailable)
@@ -47,11 +47,6 @@ final class CustomButton : UIButton {
         buttonPressed?(isActive)
     }
     
-    @objc
-    func pressedSimple() {
-        isActive = !isActive
-        buttonPressed?(isActive)
-    }
-    
+   
     
 }

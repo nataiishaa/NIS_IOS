@@ -13,69 +13,6 @@ final class WishMakerViewController: UIViewController {
         
         configureUI()
     }
-    
-    enum Constants {
-        static let sliderMin: Double = 0
-        static let sliderMax: Double = 1
-        
-        static let red: String = "Red"
-        static let blue: String = "Blue"
-        static let green: String = "Green"
-        
-        
-        static let leading: CGFloat = 20
-        
-        static let stackRadius: CGFloat = 20
-        static let stackBottom: CGFloat = -20
-        
-        static let titleText: String = "WishMaker"
-        static let titleTop: CGFloat = 30
-       
-        static let descriptionText: String = "You can change the screen color using buttons. Smile more often and use a palette"
-        static let descriptionTop: CGFloat = 40
-        static let descriptionTrailing: CGFloat = -40
-        
-        static let buttonActive: String = "Hide"
-        static let buttonDisabled: String = "Show"
-        static let buttonRandomColor: String = "Random color"
-    }
-    
-    private var backgroundRed: CGFloat = 0
-    private var backgroundGreen: CGFloat = 0
-    private var backgroundBlue: CGFloat = 0
-    
-    private let stack: UIStackView = UIStackView()
-    private let button: CustomButton = CustomButton(activeText: Constants.buttonActive, disabledText: Constants.buttonDisabled)
-    private let bludeSlider = CustomSlider(title: Constants.blue, min: Constants.sliderMin, max: Constants.sliderMax)
-    private let greenSlider = CustomSlider(title: Constants.green, min: Constants.sliderMin, max: Constants.sliderMax)
-    private let redSlider = CustomSlider(title: Constants.red, min: Constants.sliderMin, max: Constants.sliderMax)
-    
-    private func configureUI() {
-        view.backgroundColor = .black
-        
-        configureTitle()
-        configureDescription()
-        configureButton()
-        configureStack()
-    }
-    
-    private func configureStack() {
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.axis = .vertical
-        stack.backgroundColor = .white
-        view.addSubview(stack)
-        stack.layer.cornerRadius = Constants.stackRadius
-        stack.clipsToBounds = true
-        
-        NSLayoutConstraint.activate([
-            stack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.leading),
-            stack.bottomAnchor.constraint(equalTo: button.bottomAnchor, constant: Constants.stackBottom)
-        ])
-        
-        configureSliders()
-        
-    }
     private func configureTitle() {
         let title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
@@ -87,7 +24,6 @@ final class WishMakerViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             title.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            title.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.leading),
             title.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Constants.leading)
         ])
     }
@@ -159,6 +95,43 @@ final class WishMakerViewController: UIViewController {
         }
     }
    
+    private var backgroundRed: CGFloat = 0
+    private var backgroundGreen: CGFloat = 0
+    private var backgroundBlue: CGFloat = 0
+    
+    private let stack: UIStackView = UIStackView()
+    private let button: CustomButton = CustomButton(activeText: Constants.buttonActive, disabledText: Constants.buttonDisabled)
+    private let bludeSlider = CustomSlider(title: Constants.blue, min: Constants.sliderMin, max: Constants.sliderMax)
+    private let greenSlider = CustomSlider(title: Constants.green, min: Constants.sliderMin, max: Constants.sliderMax)
+    private let redSlider = CustomSlider(title: Constants.red, min: Constants.sliderMin, max: Constants.sliderMax)
+    
+    private func configureUI() {
+        view.backgroundColor = .black
+        
+        configureTitle()
+        configureDescription()
+        configureButton()
+        configureStack()
+    }
+    
+    private func configureStack() {
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.backgroundColor = .white
+        view.addSubview(stack)
+        stack.layer.cornerRadius = Constants.stackRadius
+        stack.clipsToBounds = true
+        
+        NSLayoutConstraint.activate([
+            stack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.leading),
+            stack.bottomAnchor.constraint(equalTo: button.bottomAnchor, constant: Constants.stackBottom)
+        ])
+        
+        configureSliders()
+        
+    }
+   
     
     private func changeBackground() {
         view.backgroundColor = UIColor(red: backgroundRed, green: backgroundGreen, blue: backgroundBlue, alpha: 2)
@@ -168,5 +141,31 @@ final class WishMakerViewController: UIViewController {
         redSlider.slider.value = Float(backgroundRed)
         greenSlider.slider.value = Float(backgroundGreen)
         bludeSlider.slider.value = Float(backgroundBlue)
+    }
+    enum Constants {
+        static let sliderMin: Double = 0
+        static let sliderMax: Double = 1
+        
+        static let red: String = "Red"
+        static let blue: String = "Blue"
+        static let green: String = "Green"
+        
+        
+        static let leading: CGFloat = 20
+        
+        static let stackRadius: CGFloat = 20
+        static let stackBottom: CGFloat = -20
+        
+        static let titleText: String = "WishMaker"
+        static let titleTop: CGFloat = 30
+        
+       
+        static let descriptionText: String = "You can change the screen color using buttons. Smile more often and use a palette"
+        static let descriptionTop: CGFloat = 40
+        static let descriptionTrailing: CGFloat = -40
+        
+        static let buttonActive: String = "Hide"
+        static let buttonDisabled: String = "Show"
+        static let buttonRandomColor: String = "Random color"
     }
 }
