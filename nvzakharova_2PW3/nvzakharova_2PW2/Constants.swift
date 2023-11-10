@@ -56,7 +56,7 @@ enum Constants {
             static let wishTextPlacegolderColor: UIColor = .lightGray
             static let wishTextColor: UIColor = .black
            
-            static let addWishButtonTop: Double = 5;
+            static let addWishButtonTop: Double = 5
             static let addWishButtonTitle: String = "Add new dream! I think it will be come true";
             static let addWishButtonRadius: Double = 40
             static let addWishButtonWidth: Double = 200
@@ -76,7 +76,5 @@ enum Constants {
             static let buttonWidth: Double = 20
             static let clearMes: String = "Clear dreams"
     
-
-   
 }
 
