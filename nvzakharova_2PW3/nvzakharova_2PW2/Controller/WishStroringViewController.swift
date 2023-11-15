@@ -74,7 +74,7 @@ extension WishStoringViewController: UITableViewDataSource {
             removeButton.backgroundColor = .systemYellow
             removeButton.layer.cornerRadius = Constants.buttonRadius
             removeButton.widthAnchor.constraint(equalToConstant: 260).isActive = true
-        removeButton.bottomAnchor.constraint(equalTo: self.table.topAnchor, constant: 700).isActive = true
+        removeButton.bottomAnchor.constraint(equalTo: self.table.topAnchor, constant: 600).isActive = true
             removeButton.setHeight(Constants.buttonHeight)
             removeButton.centerXAnchor.constraint(equalTo: self.table.centerXAnchor).isActive = true
             removeButton.addTarget(self, action: #selector(clearAllButtonTapped), for: .touchUpInside)
